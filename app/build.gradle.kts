@@ -22,8 +22,11 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         debug {
-            // Nom distinct pour pouvoir installer debug et release côte à côte pendant les tests
-            applicationIdSuffix = ".debug"
+            // Même applicationId que la release : google-services.json (Firebase) n'a
+            // qu'une seule app enregistrée pour "com.afriboost.app". Si besoin
+            // d'installer test et version finale côte à côte plus tard, il faudra
+            // ajouter une 2e app Android dans la console Firebase pour le
+            // package ".debug" puis réactiver applicationIdSuffix ici.
         }
     }
 
