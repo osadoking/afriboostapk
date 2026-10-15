@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fond dégradé de l'écran d'accueil natif, façon maquette "pro" :
+     bleu profond en haut vers bleu AfriBoost en bas. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:startColor="@color/afriboost_bg_dark"
+        android:centerColor="@color/afriboost_blue_dark"
+        android:endColor="@color/afriboost_blue"
+        android:type="linear" />
+</shape>

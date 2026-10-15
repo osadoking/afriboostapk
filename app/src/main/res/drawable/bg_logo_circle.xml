@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cercle blanc derrière le logo sur l'écran d'accueil (met le logo en valeur,
+     comme un badge, façon maquette app "pro"). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/afriboost_white" />
+</shape>

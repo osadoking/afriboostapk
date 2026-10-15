@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268673366253",
+    "project_id": "afriboost-271b2",
+    "storage_bucket": "afriboost-271b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268673366253:android:06155050c01d3c5dd1f4e4",
+        "android_client_info": {
+          "package_name": "com.afriboost.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArCDGL7NTe7i-304JVTclS6TzYPnMgKhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

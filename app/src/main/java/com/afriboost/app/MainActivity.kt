@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnRetry.setOnClickListener { loadCurrentOrStart() }
 
-        val startPath = intent.getStringExtra(EXTRA_START_PATH) ?: SiteRoutes.HOME
+        val startPath = intent.getStringExtra(EXTRA_START_PATH) ?: homePath()
         loadPath(startPath)
 
         handleDeepLink(intent)
@@ -190,7 +190,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomNav() {
         binding.bottomNav.setOnItemSelectedListener { item ->
             val path = when (item.itemId) {
-                R.id.nav_home -> SiteRoutes.HOME
+                R.id.nav_home -> homePath()
                 R.id.nav_services -> SiteRoutes.SERVICES
                 R.id.nav_orders -> SiteRoutes.ORDERS
                 R.id.nav_wallet -> SiteRoutes.WALLET
@@ -247,6 +247,19 @@ class MainActivity : AppCompatActivity() {
     private fun showContent() {
         binding.offlineView.visibility = View.GONE
         binding.swipeRefresh.visibility = View.VISIBLE
+    }
+
+    /**
+     * "Accueil" doit être le tableau de bord une fois connecté, et la page
+     * publique sinon. On déduit la connexion de la présence d'un cookie de
+     * session pour afriboost.com (posé par le site lui-même au login/signup,
+     * qui restent gérés par le site -- l'app ne fait qu'observer le cookie).
+     */
+    private fun homePath(): String = if (isLoggedIn()) SiteRoutes.DASHBOARD else SiteRoutes.HOME
+
+    private fun isLoggedIn(): Boolean {
+        val cookies = android.webkit.CookieManager.getInstance().getCookie(SiteRoutes.BASE_URL)
+        return !cookies.isNullOrBlank()
     }
 
     private fun isNetworkAvailable(): Boolean {

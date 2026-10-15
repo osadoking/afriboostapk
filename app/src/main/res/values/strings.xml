@@ -3,15 +3,14 @@
     <string name="app_name">AfriBoost</string>
 
     <string name="home_tagline">Boostez votre présence sur les réseaux sociaux</string>
-    <string name="home_subtitle">Abonnés, likes et vues pour Instagram, TikTok, YouTube et Facebook — livrés rapidement, pensés pour l\'Afrique.</string>
     <string name="home_cta_login">Se connecter</string>
     <string name="home_cta_signup">Créer un compte</string>
-    <string name="home_cta_guest">Découvrir les services</string>
+    <string name="home_cta_guest">Continuer sans compte</string>
 
     <string name="nav_home">Accueil</string>
     <string name="nav_services">Services</string>
     <string name="nav_orders">Commandes</string>
-    <string name="nav_wallet">Portefeuille</string>
+    <string name="nav_wallet">Recharger</string>
     <string name="nav_profile">Profil</string>
 
     <string name="offline_title">Pas de connexion</string>
