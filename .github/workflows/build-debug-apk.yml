@@ -7,6 +7,9 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-debug:
     runs-on: ubuntu-latest
@@ -41,11 +44,29 @@ jobs:
           gradle-version: "8.13"
 
       - name: Compiler l'APK (debug)
-        run: gradle assembleDebug --no-daemon
+        id: build
+        run: gradle assembleDebug --no-daemon --stacktrace 2>&1 | tee build-log.txt
+        continue-on-error: true
 
       - name: Publier l'APK comme fichier téléchargeable
+        if: steps.build.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: afriboost-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
+
+      - name: Enregistrer le journal de compilation dans le dépôt (pour diagnostic)
+        if: always()
+        run: |
+          git config user.email "ci@afriboostapp.local"
+          git config user.name "AfriBoost CI"
+          mkdir -p .ci
+          mv build-log.txt .ci/last-build-log.txt
+          git add .ci/last-build-log.txt
+          git commit -m "CI: journal de compilation [skip ci]" || echo "rien a committer"
+          git push origin HEAD:main || echo "push du journal echoue (sans gravite)"
+
+      - name: Échouer le job si la compilation a échoué
+        if: steps.build.outcome != 'success'
+        run: exit 1
