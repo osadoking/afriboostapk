@@ -1,0 +1,15 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# Clé Firebase : ne jamais commiter telle quelle si le dépôt devient public un jour.
+# Pour l'instant le dépôt est privé donc on la garde versionnée pour simplifier.
+# app/google-services.json

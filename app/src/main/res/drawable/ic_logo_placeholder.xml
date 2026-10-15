@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo provisoire (badge + flèche de croissance) en attendant le vrai logo AfriBoost.
+     À remplacer dès que le fichier officiel est fourni (voir README, section "Logo"). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,8 A62,62 0 1 1 69.9,8 Z" />
+    <path
+        android:fillColor="#FFC834"
+        android:pathData="M38,88 L58,62 L74,78 L102,42"
+        android:strokeColor="#FFC834"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#FFC834"
+        android:pathData="M82,42 L102,42 L102,62 Z" />
+</vector>

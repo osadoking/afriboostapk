@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AfriBoost" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/afriboost_blue</item>
+        <item name="colorPrimaryDark">@color/afriboost_bg_dark</item>
+        <item name="colorAccent">@color/afriboost_yellow</item>
+        <item name="android:statusBarColor">@color/afriboost_bg_dark</item>
+        <item name="android:windowBackground">@color/afriboost_bg_dark</item>
+    </style>
+
+    <style name="Theme.AfriBoost.Splash" parent="Theme.AfriBoost">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

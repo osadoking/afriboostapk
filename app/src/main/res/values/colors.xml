@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette reprise du thème afriboost.com (bleu / blanc / jaune) -->
+    <color name="afriboost_blue">#1A4D8F</color>
+    <color name="afriboost_blue_dark">#0F3366</color>
+    <color name="afriboost_yellow">#FFC834</color>
+    <color name="afriboost_white">#FFFFFF</color>
+    <color name="afriboost_offwhite">#F5F7FA</color>
+    <color name="afriboost_text_dark">#1C1F26</color>
+    <color name="afriboost_text_muted">#6B7280</color>
+
+    <!-- Mode sombre -->
+    <color name="afriboost_bg_dark">#0E1220</color>
+    <color name="afriboost_surface_dark">#171C2C</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AfriBoost</string>
+
+    <string name="home_tagline">Boostez votre présence sur les réseaux sociaux</string>
+    <string name="home_subtitle">Abonnés, likes et vues pour Instagram, TikTok, YouTube et Facebook — livrés rapidement, pensés pour l\'Afrique.</string>
+    <string name="home_cta_login">Se connecter</string>
+    <string name="home_cta_signup">Créer un compte</string>
+    <string name="home_cta_guest">Découvrir les services</string>
+
+    <string name="nav_home">Accueil</string>
+    <string name="nav_services">Services</string>
+    <string name="nav_orders">Commandes</string>
+    <string name="nav_wallet">Portefeuille</string>
+    <string name="nav_profile">Profil</string>
+
+    <string name="offline_title">Pas de connexion</string>
+    <string name="offline_message">Impossible de joindre afriboost.com. Vérifiez votre connexion internet.</string>
+    <string name="offline_retry">Réessayer</string>
+
+    <string name="file_chooser_title">Choisir un fichier</string>
+
+    <string name="notif_channel_orders_name">Commandes</string>
+    <string name="notif_channel_orders_desc">Mises à jour sur le statut de vos commandes</string>
+</resources>

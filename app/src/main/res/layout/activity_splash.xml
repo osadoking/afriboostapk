@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mise en page de secours (le fond réel vient du thème Theme.AfriBoost.Splash,
+     ce layout n'est affiché qu'un instant pendant la transition) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/afriboost_blue" />

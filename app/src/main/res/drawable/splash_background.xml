@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fond plein écran du splash : bleu AfriBoost avec le logo centré.
+     TODO: remplacer ic_logo_placeholder par le vrai logo une fois fourni (voir README). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/afriboost_blue" />
+    <item
+        android:width="140dp"
+        android:height="140dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_logo_placeholder" />
+</layer-list>
